@@ -28,6 +28,6 @@ if command -v msmtp >/dev/null 2>&1; then
     ) | tee $REPORT | msmtp "$EMAIL"
     echo "HTML report emailed to $EMAIL"
 else
-    echo "msmtp not found. Please install it with: sudo pacman -S msmtp"
+    echo "msmtp not found. Please install it with: brew install msmtp"
     echo "Report saved at $REPORT"
 fi
