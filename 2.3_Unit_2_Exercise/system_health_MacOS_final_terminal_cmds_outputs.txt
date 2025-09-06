@@ -1,0 +1,381 @@
+ I063041@L26Q3JWQVX  ~  ls -lrt
+total 76776
+drwxr-xr-x+   4 I063041  staff       128 28 Oct  2024 Public
+drwx------+   4 I063041  staff       128 28 Oct  2024 Music
+lrwxr-xr-x    1 I063041  staff        50 28 Oct  2024 OneDrive - SAP SE -> /Users/I063041/Library/CloudStorage/OneDrive-SAPSE
+lrwxr-xr-x@   1 I063041  staff        60 28 Oct  2024 Documents -> /Users/I063041/Library/CloudStorage/OneDrive-SAPSE/Documents
+lrwxr-xr-x@   1 I063041  staff        58 28 Oct  2024 Desktop -> /Users/I063041/Library/CloudStorage/OneDrive-SAPSE/Desktop
+drwx------@   4 I063041  staff       128 28 Oct  2024 Applications
+drwx------+   5 I063041  staff       160 30 Oct  2024 Pictures
+drwxr-xr-x    4 I063041  staff       128 11 Dec  2024 repos
+drwx------+  88 I063041  staff      2816  7 Apr 11:49 Library
+-rw-r--r--    1 I063041  staff  39264208 11 Jul 21:01 AWSCLIV2.pkg
+drwxr-xr-x    3 I063041  staff        96 23 Jul 18:38 learn_regex
+drwxr-xr-x    5 I063041  staff       160 23 Jul 18:38 learn_jq
+drwx------   10 I063041  staff       320  8 Aug 09:50 Movies
+drwxr-xr-x    6 I063041  staff       192 19 Aug 15:13 Corndel
+drwxr-xr-x    6 I063041  staff       192 20 Aug 09:42 UK-CRE
+-rwxr-xr-x    1 I063041  staff      1856 26 Aug 11:25 system_health_MacOS.sh
+drwx------@ 319 I063041  staff     10208 26 Aug 13:12 Downloads
+-rwxr-xr-x    1 I063041  staff        86 26 Aug 15:36 hello.sh
+-rwxr-xr-x    1 I063041  staff       213 26 Aug 15:42 age.sh
+-rwxr-xr-x    1 I063041  staff       113 26 Aug 15:45 for.sh
+-rwxr-xr-x    1 I063041  staff       110 26 Aug 15:46 break.sh
+-rwxr-xr-x    1 I063041  staff       104 26 Aug 15:46 while.sh
+-rwxr-xr-x    1 I063041  staff       182 26 Aug 15:48 function.sh
+-rwxr-xr-x    1 I063041  staff       228 26 Aug 15:50 function2.sh
+-rwxr-xr-x    1 I063041  staff       270 26 Aug 15:52 return.sh
+-rwxr-xr-x    1 I063041  staff       502 26 Aug 15:56 array.sh
+-rwxr-xr-x    1 I063041  staff       568 26 Aug 16:00 datetime.sh
+drwxr-xr-x    4 I063041  staff       128 28 Aug 09:18 ssh_logs
+ I063041@L26Q3JWQVX  ~  ./system_health_MacOS.sh
+^C
+ ✘ I063041@L26Q3JWQVX  ~ 
+ ✘ I063041@L26Q3JWQVX  ~  vi system_health_MacOS.sh
+ I063041@L26Q3JWQVX  ~  history|grep echo
+   49  echo $SHELL
+   93  echo $0
+  127  echo >> /Users/I063041/.zprofile
+  128  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/I063041/.zprofile
+  166  echo $(( 1 + 1 ))
+  167  echo $(( $number + 3 ))
+  169  echo $(( $number + 3 ))
+  170  echo $(( 10 / 3 ))
+  171  echo $(( 10 % 3 ))
+  172  echo $(( 10 % 5 ))
+  173  echo $RANDOM
+  174  echo $(( $RANDOM % 10 ))
+  254  echo "print('Hello World')" > app.py
+  544  echo $SHELL
+  558  echo $SHELL
+  630  echo "Test from Arch Linux" | msmtp -a gmail mbucktow@gmail.com
+  631  echo "Test from MacOS" | msmtp -a gmail mbucktow@gmail.com
+  632  echo "Test from MacOS" | mail -s mbucktow@gmail.com
+  633  echo "Test from MacOS" | mail mbucktow@gmail.com
+  636  echo "Test from MacOS" | mail mbucktow@gmail.com
+  641* curl https://ipecho.net/plain
+ I063041@L26Q3JWQVX  ~  echo "Test from MacOS" | mail mbucktow@gmail.com
+ I063041@L26Q3JWQVX  ~  echo "Test from MacOS" | msmtp -a gmail -d  mbucktow@gmail.com
+ignoring system configuration file /opt/homebrew/Cellar/msmtp/1.8.30/etc/msmtprc: No such file or directory
+loaded user configuration file /Users/I063041/.msmtprc
+using account gmail from /Users/I063041/.msmtprc
+host = smtp.gmail.com
+port = 587
+source ip = (not set)
+proxy host = (not set)
+proxy port = 0
+socket = (not set)
+timeout = off
+protocol = smtp
+domain = localhost
+auth = choose
+user = mbucktow@gmail.com
+password = (not set)
+passwordeval = (not set)
+ntlmdomain = (not set)
+tls = on
+tls_starttls = on
+tls_trust_file = /opt/homebrew/etc/openssl@3/cert.pem
+tls_crl_file = (not set)
+tls_fingerprint = (not set)
+tls_key_file = (not set)
+tls_cert_file = (not set)
+tls_certcheck = on
+tls_min_dh_prime_bits = (not set)
+defaults
+tls_priorities = (not set)
+tls_host_override = (not set)
+auto_from = off
+defaults
+maildomain = (not set)
+from = mbucktow@gmail.com
+from_full_name = (not set)
+defaults
+allow_from_override = on
+set_from_header = auto
+set_date_header = auto
+defaults
+set_msgid_header = auto
+set_to_header = off
+remove_bcc_headers = on
+defaults
+dsn_notify = (not set)
+dsn_return = (not set)
+logfile = /Users/I063041/.msmtp.log
+logfile_time_format = (not set)
+syslog = (not set)
+aliases = (not set)
+reading recipients from the command line
+^C
+ ✘ I063041@L26Q3JWQVX  ~  nc -vz smtp.gmail.com 587
+
+Connection to smtp.gmail.com port 587 [tcp/submission] succeeded!
+ I063041@L26Q3JWQVX  ~  cat ~/.msmtprc
+defaults
+auth on
+tls on
+#tls_trust_file /etc/ssl/certs/ca-certificates.crt
+tls_trust_file /opt/homebrew/etc/openssl@3/cert.pem
+logfile ~/.msmtp.log
+
+account gmail
+host smtp.gmail.com
+port 587
+from mbucktow@gmail.com
+user mbucktow@gmail.com
+#password nsfvrszaijflkvef
+account default : gmail
+passwordeval   "security find-generic-password -w -s msmtp-gmail"
+tls_starttls   on
+ I063041@L26Q3JWQVX  ~  ls -l /opt/homebrew/etc/openssl@3/cert.pem
+
+lrwxr-xr-x  1 I063041  admin  27  9 Jul 11:40 /opt/homebrew/etc/openssl@3/cert.pem -> ../ca-certificates/cert.pem
+ I063041@L26Q3JWQVX  ~  vi ~/.msmtprc
+ I063041@L26Q3JWQVX  ~  echo "Test from MacOS" | msmtp -a gmail  mbucktow@gmail.com
+^C
+ ✘ I063041@L26Q3JWQVX  ~  vi ~/.msmtprc
+ I063041@L26Q3JWQVX  ~  echo "Test from MacOS" | msmtp -a gmail  mbucktow@gmail.com
+^C
+ ✘ I063041@L26Q3JWQVX  ~  vi ~/.msmtprc
+ I063041@L26Q3JWQVX  ~  echo "Test from MacOS" | msmtp -a gmail  mbucktow@gmail.com
+msmtp: /Users/I063041/.msmtprc: line 5: unknown command £tls_trust_file
+ ✘ I063041@L26Q3JWQVX  ~  vi ~/.msmtprc
+ I063041@L26Q3JWQVX  ~  echo "Test from MacOS" | msmtp -a gmail  mbucktow@gmail.com
+^C
+ ✘ I063041@L26Q3JWQVX  ~  vi ~/.msmtprc
+ I063041@L26Q3JWQVX  ~  echo "Test from MacOS" | msmtp -a gmail -v  mbucktow@gmail.com
+ignoring system configuration file /opt/homebrew/Cellar/msmtp/1.8.30/etc/msmtprc: No such file or directory
+loaded user configuration file /Users/I063041/.msmtprc
+using account gmail from /Users/I063041/.msmtprc
+defaults
+host = smtp.gmail.com
+port = 587
+source ip = (not set)
+proxy host = (not set)
+proxy port = 0
+socket = (not set)
+timeout = off
+protocol = smtp
+domain = localhost
+auth = choose
+user = mbucktow@gmail.com
+password = *
+passwordeval = (not set)
+ntlmdomain = (not set)
+tls = on
+tls_starttls = on
+tls_trust_file = /opt/homebrew/etc/openssl@3/cert.pem
+tls_crl_file = (not set)
+tls_fingerprint = (not set)
+tls_key_file = (not set)
+tls_cert_file = (not set)
+tls_certcheck = on
+tls_min_dh_prime_bits = (not set)
+tls_priorities = (not set)
+tls_host_override = (not set)
+auto_from = off
+maildomain = (not set)
+from = mbucktow@gmail.com
+from_full_name = (not set)
+allow_from_override = on
+set_from_header = auto
+set_date_header = auto
+set_msgid_header = auto
+set_to_header = off
+remove_bcc_headers = on
+dsn_notify = (not set)
+dsn_return = (not set)
+logfile = /Users/I063041/.msmtp.log
+logfile_time_format = (not set)
+syslog = (not set)
+aliases = (not set)
+reading recipients from the command line
+^C
+ ✘ I063041@L26Q3JWQVX  ~  vi ~/.msmtprc
+ I063041@L26Q3JWQVX  ~  echo "Test from MacOS" | msmtp -a gmail -v  mbucktow@gmail.com
+ignoring system configuration file /opt/homebrew/Cellar/msmtp/1.8.30/etc/msmtprc: No such file or directory
+loaded user configuration file /Users/I063041/.msmtprc
+using account gmail from /Users/I063041/.msmtprc
+host = smtp.gmail.com
+port = 465
+source ip = (not set)
+proxy host = (not set)
+proxy port = 0
+socket = (not set)
+timeout = off
+protocol = smtp
+domain = localhost
+auth = choose
+user = mbucktow@gmail.com
+password = *
+passwordeval = (not set)
+ntlmdomain = (not set)
+tls = on
+tls_starttls = off
+tls_trust_file = system
+tls_crl_file = (not set)
+tls_fingerprint = (not set)
+tls_key_file = (not set)
+tls_cert_file = (not set)
+tls_certcheck = on
+tls_min_dh_prime_bits = (not set)
+tls_priorities = (not set)
+tls_host_override = (not set)
+auto_from = off
+maildomain = (not set)
+from = mbucktow@gmail.com
+from_full_name = (not set)
+allow_from_override = on
+set_from_header = auto
+set_date_header = auto
+set_msgid_header = auto
+set_to_header = off
+remove_bcc_headers = on
+dsn_notify = (not set)
+dsn_return = (not set)
+logfile = /Users/I063041/.msmtp.log
+logfile_time_format = (not set)
+#!/bin/bash
+EMAIL="myemail@gmail.com"
+#!/bin/bash
+
+# ===== Configuration =====
+EMAIL="myemail@gmail.com"
+HOSTNAME=$(hostname)
+DATE=$(date +"%Y-%m-%d %H:%M:%S")
+REPORT="/tmp/system_health_report.txt"
+LOGFILE="$HOME/system_health_email.log"
+
+# ===== Detect OS =====
+OS=$(uname)
+
+# ===== Collect System Info =====
+if [ "$OS" = "Darwin" ]; then
+    DISK_USAGE=$(df -h)
+    CPU_USAGE=$(top -l 1 | grep "CPU usage")
+    MEM_USAGE=$(top -l 1 | grep PhysMem)
+    TOP_MEM=$(ps -axo pid,ppid,command,%mem,%cpu | head -n 6)
+    TOP_CPU=$(ps -axo pid,ppid,command,%cpu,%mem | head -n 6)
+else
+    DISK_USAGE=$(df -h --output=source,fstype,size,used,avail,pcent,target)
+    CPU_USAGE=$(mpstat 1 1 | awk '/Average:/ {print "User: "$3"%  System: "$5"%  Idle: "$12"%"}')
+    MEM_USAGE=$(free -h)
+    TOP_MEM=$(ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head -n 6)
+    TOP_CPU=$(ps -eo pid,ppid,cmd,%cpu,%mem --sort=-%cpu | head -n 6)
+fi
+
+# ===== Compose HTML Report =====
+HTML_REPORT=$(cat <<EOF
+<html><body>
+<h2>System Health Report - $HOSTNAME</h2>
+<p><b>Date:</b> $DATE</p>
+<hr>
+<h3> Disk Usage</h3><pre>$DISK_USAGE</pre>
+<h3> CPU Usage</h3><pre>$CPU_USAGE</pre>
+<h3> Memory Usage</h3><pre>$MEM_USAGE</pre>
+<h3> Top 5 Memory-Consuming Processes</h3><pre>$TOP_MEM</pre>
+<h3> Top 5 CPU-Consuming Processes</h3><pre>$TOP_CPU</pre>
+</body></html>
+EOF
+)
+
+# ===== Send Email =====
+if command -v msmtp >/dev/null 2>&1; then
+    DISK_USAGE=$(df -h)
+syslog = (not set)
+aliases = (not set)
+reading recipients from the command line
+TLS session parameters:
+    (TLS1.3)-(ECDHE-X25519)-(ECDSA-SECP256R1-SHA256)-(AES-256-GCM)
+TLS certificate information:
+    Subject:
+        CN=smtp.gmail.com
+    Issuer:
+        C=US,O=Google Trust Services,CN=WR2
+    Validity:
+        Activation time: Mon  7 Jul 09:35:09 2025
+        Expiration time: Mon 29 Sep 09:35:08 2025
+    Fingerprints:
+        SHA256: 51:C1:13:6F:61:0F:92:44:71:D7:66:0E:3C:17:98:4C:D1:EA:CD:8C:C5:89:DD:65:C7:69:02:11:FE:F0:9C:7F
+        SHA1 (deprecated): C4:07:BA:42:BA:F5:97:69:36:E9:5C:E3:07:C4:24:05:45:22:BE:A7
+<-- 220 smtp.gmail.com ESMTP 5b1f17b1804b1-45b79799c81sm25963105e9.4 - gsmtp
+--> EHLO localhost
+<-- 250-smtp.gmail.com at your service, [194.130.48.53]
+<-- 250-SIZE 35882577
+<-- 250-8BITMIME
+<-- 250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+<-- 250-ENHANCEDSTATUSCODES
+<-- 250-PIPELINING
+<-- 250-CHUNKING
+<-- 250 SMTPUTF8
+--> AUTH PLAIN AG1idWNrdG93QGdtYWlsLmNvbQBuc2Z2cnN6YWlqZmxrdmVm
+<-- 235 2.7.0 Accepted
+--> MAIL FROM:<mbucktow@gmail.com> SMTPUTF8
+--> RCPT TO:<mbucktow@gmail.com>
+--> DATA
+<-- 250 2.1.0 OK 5b1f17b1804b1-45b79799c81sm25963105e9.4 - gsmtp
+<-- 250 2.1.5 OK 5b1f17b1804b1-45b79799c81sm25963105e9.4 - gsmtp
+<-- 354 Go ahead 5b1f17b1804b1-45b79799c81sm25963105e9.4 - gsmtp
+--> From: mbucktow@gmail.com
+#!/bin/bash
+
+# ===== Configuration =====
+EMAIL="mbucktow@gmail.com"
+HOSTNAME=$(hostname)
+DATE=$(date +"%Y-%m-%d %H:%M:%S")
+REPORT="/tmp/system_health_report.txt"
+LOGFILE="$HOME/system_health_email.log"
+
+# ===== Detect OS =====
+OS=$(uname)
+
+# ===== Collect System Info =====
+if [ "$OS" = "Darwin" ]; then
+    DISK_USAGE=$(df -h)
+--> Date: Thu, 28 Aug 2025 11:20:20 +0100
+--> Message-ID: <9a9028f659d4f262094b852a2858d122@gmail.com>
+--> Test from MacOS
+--> .
+<-- 250 2.0.0 OK  1756376421 5b1f17b1804b1-45b79799c81sm25963105e9.4 - gsmtp
+--> QUIT
+<-- 221 2.0.0 closing connection 5b1f17b1804b1-45b79799c81sm25963105e9.4 - gsmtp
+ I063041@L26Q3JWQVX  ~  vi system_health_MacOS.sh
+ I063041@L26Q3JWQVX  ~  vi system_health_MacOS_final.sh
+ I063041@L26Q3JWQVX  ~  ls -lrt
+total 76784
+drwxr-xr-x+   4 I063041  staff       128 28 Oct  2024 Public
+drwx------+   4 I063041  staff       128 28 Oct  2024 Music
+lrwxr-xr-x    1 I063041  staff        50 28 Oct  2024 OneDrive - SAP SE -> /Users/I063041/Library/CloudStorage/OneDrive-SAPSE
+lrwxr-xr-x@   1 I063041  staff        60 28 Oct  2024 Documents -> /Users/I063041/Library/CloudStorage/OneDrive-SAPSE/Documents
+lrwxr-xr-x@   1 I063041  staff        58 28 Oct  2024 Desktop -> /Users/I063041/Library/CloudStorage/OneDrive-SAPSE/Desktop
+drwx------@   4 I063041  staff       128 28 Oct  2024 Applications
+drwx------+   5 I063041  staff       160 30 Oct  2024 Pictures
+drwxr-xr-x    4 I063041  staff       128 11 Dec  2024 repos
+drwx------+  88 I063041  staff      2816  7 Apr 11:49 Library
+-rw-r--r--    1 I063041  staff  39264208 11 Jul 21:01 AWSCLIV2.pkg
+drwxr-xr-x    3 I063041  staff        96 23 Jul 18:38 learn_regex
+drwxr-xr-x    5 I063041  staff       160 23 Jul 18:38 learn_jq
+drwx------   10 I063041  staff       320  8 Aug 09:50 Movies
+drwxr-xr-x    6 I063041  staff       192 19 Aug 15:13 Corndel
+drwxr-xr-x    6 I063041  staff       192 20 Aug 09:42 UK-CRE
+-rwxr-xr-x    1 I063041  staff      1856 26 Aug 11:25 system_health_MacOS.sh
+drwx------@ 319 I063041  staff     10208 26 Aug 13:12 Downloads
+-rwxr-xr-x    1 I063041  staff        86 26 Aug 15:36 hello.sh
+-rwxr-xr-x    1 I063041  staff       213 26 Aug 15:42 age.sh
+-rwxr-xr-x    1 I063041  staff       113 26 Aug 15:45 for.sh
+-rwxr-xr-x    1 I063041  staff       110 26 Aug 15:46 break.sh
+-rwxr-xr-x    1 I063041  staff       104 26 Aug 15:46 while.sh
+-rwxr-xr-x    1 I063041  staff       182 26 Aug 15:48 function.sh
+-rwxr-xr-x    1 I063041  staff       228 26 Aug 15:50 function2.sh
+-rwxr-xr-x    1 I063041  staff       270 26 Aug 15:52 return.sh
+-rwxr-xr-x    1 I063041  staff       502 26 Aug 15:56 array.sh
+-rwxr-xr-x    1 I063041  staff       568 26 Aug 16:00 datetime.sh
+drwxr-xr-x    4 I063041  staff       128 28 Aug 09:18 ssh_logs
+-rw-r--r--    1 I063041  staff      1863 28 Aug 11:24 system_health_MacOS_final.sh
+ I063041@L26Q3JWQVX  ~  chmod 755 system_health_MacOS_final.sh
+ I063041@L26Q3JWQVX  ~  ./system_health_MacOS_final.sh
+Report saved to /tmp/system_health_report.txt
+ I063041@L26Q3JWQVX  ~  vi system_health_MacOS_final.sh
+ I063041@L26Q3JWQVX  ~  ./system_health_MacOS_final.sh
+Report saved to /tmp/system_health_report.txt
+ I063041@L26Q3JWQVX  ~  pwd
