@@ -1,0 +1,338 @@
+ I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  python3 weather_app.py
+Welcome to the Weather App!
+ I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  LAT=51.5 LON=-0.11; curl "https://api.open-meteo.com/v1/forecast?latitude=$LAT&longitude=$LON&hourly=precipitation&forecast_days=1"
+{"latitude":51.5,"longitude":-0.10000014,"generationtime_ms":0.016927719116210938,"utc_offset_seconds":0,"timezone":"GMT","timezone_abbreviation":"GMT","elevation":7.0,"hourly_units":{"time":"iso8601","precipitation":"mm"},"hourly":{"time":["2025-09-03T00:00","2025-09-03T01:00","2025-09-03T02:00","2025-09-03T03:00","2025-09-03T04:00","2025-09-03T05:00","2025-09-03T06:00","2025-09-03T07:00","2025-09-03T08:00","2025-09-03T09:00","2025-09-03T10:00","2025-09-03T11:00","2025-09-03T12:00","2025-09-03T13:00","2025-09-03T14:00","2025-09-03T15:00","2025-09-03T16:00","2025-09-03T17:00","2025-09-03T18:00","2025-09-03T19:00","2025-09-03T20:00","2025-09-03T21:00","2025-09-03T22:00","2025-09-03T23:00"],"precipitation":[0.00,0.10,1.70,2.70,3.80,0.30,0.40,0.50,0.20,0.00,0.00,0.00,0.20,1.60,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00]}}%  
+ I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  LAT=51.5 LON=-0.11; curl "https://api.open-meteo.com/v1/forecast?latitude=$LAT&longitude=$LON&hourly=precipitation&forecast_days=1"\|jq
+<html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+ I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  LAT=51.5 LON=-0.11; curl "https://api.open-meteo.com/v1/forecast?latitude=$LAT&longitude=$LON&hourly=precipitation&forecast_days=1" | jq
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100   835    0   835    0     0   6046      0 --:--:-- --:--:-- --:--:--  6050
+{
+  "latitude": 51.5,
+  "longitude": -0.10000014,
+  "generationtime_ms": 0.0324249267578125,
+  "utc_offset_seconds": 0,
+  "timezone": "GMT",
+  "timezone_abbreviation": "GMT",
+  "elevation": 7.0,
+  "hourly_units": {
+    "time": "iso8601",
+    "precipitation": "mm"
+  },
+  "hourly": {
+    "time": [
+      "2025-09-03T00:00",
+      "2025-09-03T01:00",
+      "2025-09-03T02:00",
+      "2025-09-03T03:00",
+      "2025-09-03T04:00",
+      "2025-09-03T05:00",
+      "2025-09-03T06:00",
+      "2025-09-03T07:00",
+      "2025-09-03T08:00",
+      "2025-09-03T09:00",
+      "2025-09-03T10:00",
+      "2025-09-03T11:00",
+      "2025-09-03T12:00",
+      "2025-09-03T13:00",
+      "2025-09-03T14:00",
+      "2025-09-03T15:00",
+      "2025-09-03T16:00",
+      "2025-09-03T17:00",
+      "2025-09-03T18:00",
+      "2025-09-03T19:00",
+      "2025-09-03T20:00",
+      "2025-09-03T21:00",
+      "2025-09-03T22:00",
+      "2025-09-03T23:00"
+    ],
+    "precipitation": [
+      0.00,
+      0.10,
+      1.70,
+      2.70,
+      3.80,
+      0.30,
+      0.40,
+      0.50,
+      0.20,
+      0.00,
+      0.00,
+      0.00,
+      0.20,
+      1.60,
+      0.00,
+      0.00,
+      0.00,
+      0.00,
+      0.00,
+      0.00,
+      0.00,
+      0.00,
+      0.00,
+      0.00
+    ]
+  }
+}
+ I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  python3 weather_app.py                                                                                                                  
+Traceback (most recent call last):
+  File "/Users/I063041/Corndel/3.2_Demo_API_weather/weather_app.py", line 1, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+ ✘ I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  python3 weather_app.py
+Traceback (most recent call last):
+  File "/Users/I063041/Corndel/3.2_Demo_API_weather/weather_app.py", line 1, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+ ✘ I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  python3 weather_app.py
+Traceback (most recent call last):
+  File "/Users/I063041/Corndel/3.2_Demo_API_weather/weather_app.py", line 1, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+ ✘ I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  source ~/venv/bin/activate
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  python3 weather_app.py    
+Welcome to the Weather App!
+{'reason': "Data corrupted at path ''. Cannot initialize Float from invalid String value $LAT.", 'error': True}
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  python3 weather_app.py
+Welcome to the Weather App!
+{'latitude': 51.5, 'longitude': -0.10000014, 'generationtime_ms': 0.019550323486328125, 'utc_offset_seconds': 0, 'timezone': 'GMT', 'timezone_abbreviation': 'GMT', 'elevation': 7.0, 'hourly_units': {'time': 'iso8601', 'precipitation': 'mm'}, 'hourly': {'time': ['2025-09-03T00:00', '2025-09-03T01:00', '2025-09-03T02:00', '2025-09-03T03:00', '2025-09-03T04:00', '2025-09-03T05:00', '2025-09-03T06:00', '2025-09-03T07:00', '2025-09-03T08:00', '2025-09-03T09:00', '2025-09-03T10:00', '2025-09-03T11:00', '2025-09-03T12:00', '2025-09-03T13:00', '2025-09-03T14:00', '2025-09-03T15:00', '2025-09-03T16:00', '2025-09-03T17:00', '2025-09-03T18:00', '2025-09-03T19:00', '2025-09-03T20:00', '2025-09-03T21:00', '2025-09-03T22:00', '2025-09-03T23:00'], 'precipitation': [0.0, 0.1, 1.7, 2.7, 3.8, 0.3, 0.4, 0.5, 0.2, 0.0, 0.0, 0.0, 0.2, 1.6, 0.0, 0.0, 0.0, 1.9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}}
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  python3 weather_app.py
+Welcome to the Weather App!
+{'latitude': 51.5, 'longitude': -0.10000014, 'generationtime_ms': 0.01919269561767578, 'utc_offset_seconds': 0, 'timezone': 'GMT', 'timezone_abbreviation': 'GMT', 'elevation': 7.0, 'hourly_units': {'time': 'iso8601', 'precipitation': 'mm'}, 'hourly': {'time': ['2025-09-03T00:00', '2025-09-03T01:00', '2025-09-03T02:00', '2025-09-03T03:00', '2025-09-03T04:00', '2025-09-03T05:00', '2025-09-03T06:00', '2025-09-03T07:00', '2025-09-03T08:00', '2025-09-03T09:00', '2025-09-03T10:00', '2025-09-03T11:00', '2025-09-03T12:00', '2025-09-03T13:00', '2025-09-03T14:00', '2025-09-03T15:00', '2025-09-03T16:00', '2025-09-03T17:00', '2025-09-03T18:00', '2025-09-03T19:00', '2025-09-03T20:00', '2025-09-03T21:00', '2025-09-03T22:00', '2025-09-03T23:00'], 'precipitation': [0.0, 0.1, 1.7, 2.7, 3.8, 0.3, 0.4, 0.5, 0.2, 0.0, 0.0, 0.0, 0.2, 1.6, 0.0, 0.0, 0.0, 1.9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}}
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  python3 weather_app.py
+Welcome to the Weather App!
+{'latitude': 51.5, 'longitude': -0.10000014, 'generationtime_ms': 0.01621246337890625, 'utc_offset_seconds': 0, 'timezone': 'GMT', 'timezone_abbreviation': 'GMT', 'elevation': 7.0, 'hourly_units': {'time': 'iso8601', 'precipitation': 'mm'}, 'hourly': {'time': ['2025-09-03T00:00', '2025-09-03T01:00', '2025-09-03T02:00', '2025-09-03T03:00', '2025-09-03T04:00', '2025-09-03T05:00', '2025-09-03T06:00', '2025-09-03T07:00', '2025-09-03T08:00', '2025-09-03T09:00', '2025-09-03T10:00', '2025-09-03T11:00', '2025-09-03T12:00', '2025-09-03T13:00', '2025-09-03T14:00', '2025-09-03T15:00', '2025-09-03T16:00', '2025-09-03T17:00', '2025-09-03T18:00', '2025-09-03T19:00', '2025-09-03T20:00', '2025-09-03T21:00', '2025-09-03T22:00', '2025-09-03T23:00'], 'precipitation': [0.0, 0.1, 1.7, 2.7, 3.8, 0.3, 0.4, 0.5, 0.2, 0.0, 0.0, 0.0, 0.2, 1.6, 0.0, 0.0, 0.0, 1.9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}}
+Will it rain in the next 8 hours? True
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  python3 weather_app.py
+Welcome to the Weather App!
+{'latitude': 51.5, 'longitude': -0.10000014, 'generationtime_ms': 0.01811981201171875, 'utc_offset_seconds': 0, 'timezone': 'GMT', 'timezone_abbreviation': 'GMT', 'elevation': 7.0, 'hourly_units': {'time': 'iso8601', 'precipitation': 'mm'}, 'hourly': {'time': ['2025-09-03T00:00', '2025-09-03T01:00', '2025-09-03T02:00', '2025-09-03T03:00', '2025-09-03T04:00', '2025-09-03T05:00', '2025-09-03T06:00', '2025-09-03T07:00', '2025-09-03T08:00', '2025-09-03T09:00', '2025-09-03T10:00', '2025-09-03T11:00', '2025-09-03T12:00', '2025-09-03T13:00', '2025-09-03T14:00', '2025-09-03T15:00', '2025-09-03T16:00', '2025-09-03T17:00', '2025-09-03T18:00', '2025-09-03T19:00', '2025-09-03T20:00', '2025-09-03T21:00', '2025-09-03T22:00', '2025-09-03T23:00'], 'precipitation': [0.0, 0.1, 1.7, 2.7, 3.8, 0.3, 0.4, 0.5, 0.2, 0.0, 0.0, 0.0, 0.2, 1.6, 0.0, 0.0, 0.0, 1.9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}}
+Will it rain in the next 8 hours? True
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  python3 weather_app.py
+Rain expected today, bring an umbrella!
+Welcome to the Weather App!
+{'latitude': 51.5, 'longitude': -0.10000014, 'generationtime_ms': 0.014901161193847656, 'utc_offset_seconds': 0, 'timezone': 'GMT', 'timezone_abbreviation': 'GMT', 'elevation': 7.0, 'hourly_units': {'time': 'iso8601', 'precipitation': 'mm'}, 'hourly': {'time': ['2025-09-03T00:00', '2025-09-03T01:00', '2025-09-03T02:00', '2025-09-03T03:00', '2025-09-03T04:00', '2025-09-03T05:00', '2025-09-03T06:00', '2025-09-03T07:00', '2025-09-03T08:00', '2025-09-03T09:00', '2025-09-03T10:00', '2025-09-03T11:00', '2025-09-03T12:00', '2025-09-03T13:00', '2025-09-03T14:00', '2025-09-03T15:00', '2025-09-03T16:00', '2025-09-03T17:00', '2025-09-03T18:00', '2025-09-03T19:00', '2025-09-03T20:00', '2025-09-03T21:00', '2025-09-03T22:00', '2025-09-03T23:00'], 'precipitation': [0.0, 0.1, 1.7, 2.7, 3.8, 0.3, 0.4, 0.5, 0.2, 0.0, 0.0, 0.0, 0.2, 1.6, 0.0, 0.0, 0.0, 1.9, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]}}
+Will it rain in the next 8 hours? True
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  python3 weather_app.py
+Rain expected today, bring an umbrella!
+Welcome to the Weather App!
+Will it rain in the next 8 hours? True
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  python3 weather_app.py
+Rain expected today, bring an umbrella!
+Welcome to the Weather App!
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  python3 weather_app.py
+Traceback (most recent call last):
+  File "/Users/I063041/Corndel/3.2_Demo_API_weather/weather_app.py", line 18, in <module>
+    print(f"Rain expected today in {CITY}, bring an umbrella!")
+                                    ^^^^
+NameError: name 'CITY' is not defined
+(venv)  ✘ I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  python3 weather_app.py
+Rain expected today in London, bring an umbrella!
+Welcome to the Weather App!
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  CITY = "London"; curl "http://geocoding-api.open-meteo.com/v1/search?name={CITY}&count=1"
+zsh: command not found: CITY
+{"results":[{"id":12572085,"name":"City","latitude":18.24408,"longitude":-77.4972,"elevation":817.0,"feature_code":"PPL","country_code":"JM","admin1_id":3488222,"admin2_id":11495535,"timezone":"America/Jamaica","country_id":3489940,"country":"Jamaica","admin1":"Trelawny Parish","admin2":"Lorrimers"}],"generationtime_ms":1.7068386}%                                                                                       
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  CITY = "London"; curl "http://geocoding-api.open-meteo.com/v1/search?name=$CITY&count=1" 
+zsh: command not found: CITY
+{"generationtime_ms":0.050663948}%                                                                                                                                                                                
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  CITY="London";curl "http://geocoding-api.open-meteo.com/v1/search?name=$CITY&count=1" 
+{"results":[{"id":2643743,"name":"London","latitude":51.50853,"longitude":-0.12574,"elevation":25.0,"feature_code":"PPLC","country_code":"GB","admin1_id":6269131,"admin2_id":2648110,"timezone":"Europe/London","population":8961989,"country_id":2635167,"country":"United Kingdom","admin1":"England","admin2":"Greater London"}],"generationtime_ms":0.6763935}%                                                                
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  CITY="London";curl "http://geocoding-api.open-meteo.com/v1/search?name=$CITY&count=1"\|jq
+<html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  CITY="London";curl -s "https://geocoding-api.open-meteo.com/v1/search?name=$CITY&count=1"\|jq
+<html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+<hr><center>nginx</center>
+</body>
+</html>
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  CITY="London";curl -s "https://geocoding-api.open-meteo.com/v1/search?name=$CITY&count=1"|jq 
+{
+  "results": [
+    {
+      "id": 2643743,
+      "name": "London",
+      "latitude": 51.50853,
+      "longitude": -0.12574,
+      "elevation": 25.0,
+      "feature_code": "PPLC",
+      "country_code": "GB",
+      "admin1_id": 6269131,
+      "admin2_id": 2648110,
+      "timezone": "Europe/London",
+      "population": 8961989,
+      "country_id": 2635167,
+      "country": "United Kingdom",
+      "admin1": "England",
+      "admin2": "Greater London"
+    }
+  ],
+  "generationtime_ms": 0.84650517
+}
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  python3 weather_app.py                                                                       
+Rain expected today in the next 8 hours in London, bring an umbrella!
+Welcome to the Weather App!
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../2.3_Unit_2_Exercise/system_health.sh
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+no changes added to commit (use "git add" and/or "git commit -a")
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±  git add weather_app.py 
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±✚  git status            
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   weather_app.py
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../2.3_Unit_2_Exercise/system_health.sh
+
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main ±✚  git push 
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 395 bytes | 395.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/mehrabb/Corndel.git
+   cb9fc88..a8b995f  main -> main
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather   main ±✚  git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   weather_app.py
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../2.3_Unit_2_Exercise/system_health.sh
+
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather   main ±✚  cd ../2.3_Unit_2_Exercise 
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/2.3_Unit_2_Exercise   main ±✚  git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   ../3.2_Demo_API_weather/weather_app.py
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   system_health.sh
+
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/2.3_Unit_2_Exercise   main ±✚  git add system_health.sh
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/2.3_Unit_2_Exercise   main ✚  git status              
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   system_health.sh
+        new file:   ../3.2_Demo_API_weather/weather_app.py
+
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/2.3_Unit_2_Exercise   main ✚  cd ..
+(venv)  I063041@L26Q3JWQVX  ~/Corndel   main ✚  git commit -m "Adding system_health.sh and weather_app.py"
+[main ebc4203] Adding system_health.sh and weather_app.py
+ 2 files changed, 28 insertions(+), 1 deletion(-)
+ mode change 100644 => 100755 2.3_Unit_2_Exercise/system_health.sh
+ create mode 100644 3.2_Demo_API_weather/weather_app.py
+(venv)  I063041@L26Q3JWQVX  ~/Corndel  ↱ main  git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+(venv)  I063041@L26Q3JWQVX  ~/Corndel  ↱ main  ls -lrt
+total 0
+drwxr-xr-x  21 I063041  staff  672  4 Aug 16:14 DevOps-Unit-1-Workshop
+drwxr-xr-x  16 I063041  staff  512 19 Aug 11:50 DevOps-Unit-2-Workshop
+drwxr-xr-x   4 I063041  staff  128 28 Aug 09:47 2.3_Unit_2_Exercise
+drwxr-xr-x   3 I063041  staff   96  3 Sep 16:57 3.2_Demo_API_weather
+(venv)  I063041@L26Q3JWQVX  ~/Corndel  ↱ main  cd 3.2_Demo_API_weather 
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main  ls -lrt
+total 8
+-rw-r--r--  1 I063041  staff  764  3 Sep 18:24 weather_app.py
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main  python3 make-transport-get-request.py 
+Traceback (most recent call last):
+  File "/Users/I063041/Corndel/3.2_Demo_API_weather/make-transport-get-request.py", line 1, in <module>
+    import request
+ModuleNotFoundError: No module named 'request'
+(venv)  ✘ I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main  python3 make-transport-get-request.py
+Traceback (most recent call last):
+  File "/Users/I063041/Corndel/3.2_Demo_API_weather/make-transport-get-request.py", line 11, in <module>
+    result = request.get(url, headers=headers)
+             ^^^^^^^
+NameError: name 'request' is not defined. Did you mean: 'requests'?
+(venv)  ✘ I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main  python3 make-transport-get-request.py
++----------------+----------+--------------------------+
+| Departure Time | Platform |       Destination        |
++----------------+----------+--------------------------+
+|     21:20      |          |     London Waterloo      |
+|     21:30      |          | Windsor & Eton Riverside |
+|     21:50      |          |     London Waterloo      |
+|     22:00      |          | Windsor & Eton Riverside |
+|     22:20      |          |     London Waterloo      |
+|     22:30      |          | Windsor & Eton Riverside |
+|     22:50      |          |     London Waterloo      |
+|     23:00      |          | Windsor & Eton Riverside |
++----------------+----------+--------------------------+
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main  python3 make-transport-get-request.py
++----------------+----------+-------------+
+| Departure Time | Platform | Destination |
++----------------+----------+-------------+
+|     21:09      |    9     | Ely (Cambs) |
+|     21:27      |    10    |  Cambridge  |
+|     21:33      |    2     |    Leeds    |
+|     21:39      |    9     | Kings Lynn  |
+|     22:00      |    0     |  Newcastle  |
+|     22:09      |    8     | Ely (Cambs) |
+|     22:27      |    9     |  Cambridge  |
+|     22:39      |    10    | Kings Lynn  |
+|     23:00      |    6     |    York     |
++----------------+----------+-------------+
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main  python3 make-transport-get-request.py
++----------------+----------+--------------------------+
+| Departure Time | Platform |       Destination        |
++----------------+----------+--------------------------+
+|     21:20      |          |     London Waterloo      |
+|     21:30      |          | Windsor & Eton Riverside |
+|     21:50      |          |     London Waterloo      |
+|     22:00      |          | Windsor & Eton Riverside |
+|     22:20      |          |     London Waterloo      |
+|     22:30      |          | Windsor & Eton Riverside |
+|     22:50      |          |     London Waterloo      |
+|     23:00      |          | Windsor & Eton Riverside |
++----------------+----------+--------------------------+
+(venv)  I063041@L26Q3JWQVX  ~/Corndel/3.2_Demo_API_weather  ↱ main  
