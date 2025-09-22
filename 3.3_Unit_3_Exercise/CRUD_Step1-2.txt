@@ -1,0 +1,130 @@
+Step 1: Building an Inventory Management System.
+We’ll manage items in stock. Each item will have:
+
+id (unique number)
+name (string)
+manufacturer (string)
+sku (string)
+price (integer, pennies)
+
+Step 2: API documentation
+
+1. Get all items
+
+HTTP method: GET
+
+URL: /items
+
+Parameters: None
+
+Response:
+
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "manufacturer": "Dell",
+    "sku": "LAP123",
+    "price": 1000
+  },
+  {
+    "id": 2,
+    "name": "Mouse",
+    "manufacturer": "Logitech",
+    "sku": "MOU456",
+    "price": 20
+  }
+]
+
+2. Get item with ID <ID>
+
+HTTP method: GET
+
+URL: /items/<id>
+
+Parameters: <id> in the URL path
+
+Response (success):
+
+{
+  "id": 1,
+  "name": "Laptop",
+  "manufacturer": "Dell",
+  "sku": "LAP123",
+  "price": 1000
+}
+
+
+Response (error):
+
+{ "error": "Item not found" }
+
+3. Create new item
+
+HTTP method: POST
+
+URL: /items
+
+Request body:
+
+{
+  "name": "Keyboard",
+  "manufacturer": "Logitech",
+  "sku": "KEY789",
+  "price": 50
+}
+
+
+Response:
+
+{
+  "id": 3,
+  "name": "Keyboard",
+  "manufacturer": "Logitech",
+  "sku": "KEY789",
+  "price": 50
+}
+
+4. Update item with ID <ID>
+
+HTTP method: PUT
+
+URL: /items/<id>
+
+Request body:
+
+{
+  "price": 25
+}
+
+
+Response (success):
+
+{
+  "id": 2,
+  "name": "Mouse",
+  "manufacturer": "Logitech",
+  "sku": "MOU456",
+  "price": 25
+}
+
+
+Response (error):
+
+{ "error": "Item not found" }
+
+5. Delete item with ID <ID>
+
+HTTP method: DELETE
+
+URL: /items/<id>
+
+Response (success):
+
+{ "message": "Item deleted successfully" }
+
+
+Response (error):
+
+{ "error": "Item not found" }
+
