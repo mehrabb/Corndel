@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop",
+    "manufacturer": "Dell",
+    "sku": "LAP123",
+    "price": 120000
+  },
+  {
+    "id": 2,
+    "name": "Mouse",
+    "manufacturer": "Logitech",
+    "sku": "MOU456",
+    "price": 2000
+  },
+  {
+    "id": 3,
+    "name": "Keyboard",
+    "manufacturer": "Apple",
+    "sku": "MAC123",
+    "price": 55000
+  }
+]
