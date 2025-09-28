@@ -15,4 +15,14 @@ warrior.double_speed()
 print(f"Warrior speed: {warrior.speed}")
 print(f"Ninja speed: {ninja.speed}")     
 
+class Dog:
+    def __init__(self, name):
+        self.name = name
     
+    def bark(self):
+        print("Woof!")
+
+my_dog = Dog("Rex")
+
+print(my_dog.name)   # Rex
+my_dog.bark()        # Woof!
