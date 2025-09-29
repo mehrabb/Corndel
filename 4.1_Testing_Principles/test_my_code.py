@@ -29,4 +29,3 @@ def starts_vowel(s: str) -> bool:
         return False
     return s[0].lower() in "aeiou"
 
-

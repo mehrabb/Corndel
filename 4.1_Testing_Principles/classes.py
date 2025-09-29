@@ -26,3 +26,20 @@ my_dog = Dog("Rex")
 
 print(my_dog.name)   # Rex
 my_dog.bark()        # Woof!
+
+class Car:
+    def __init__(self,brand,year):
+        self.brand = brand
+        self.year = year
+        
+    def drive(self):
+        print("Vroom!")
+        
+    def info(self):
+        print(f"This car is a {self.brand} from {self.year}")
+
+my_car = Car("Toyota",2015)
+my_car.drive()
+my_car.info()
+
+    
