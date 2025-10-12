@@ -35,18 +35,57 @@ class Piece(ABC):
         board.move_piece(current_square, new_square)
 
 
+#class Pawn(Piece):
+#    """
+#    A class representing a chess pawn.
+#    """
+#    def get_available_moves(self, board) -> List[Square]:
+#        current_square = board.find_piece(self)
+#        if self.player == Player.BLACK:
+#            square_in_front = Square.at(current_square.row - 1, current_square.col)
+#            return [square_in_front]
+#        else:
+#            square_in_front = Square.at(current_square.row + 1, current_square.col)
+#            return [square_in_front]
+
 class Pawn(Piece):
     """
-    A class representing a chess pawn.
+    A class representing a chess pawn to accommodate two moves
     """
+
     def get_available_moves(self, board) -> List[Square]:
+        # Step 1: Find the square where this pawn currently stands
         current_square = board.find_piece(self)
+
+        # Step 2: Create an empty list to store all possible moves
+        moves = []
+
+        # Step 3: If the pawn belongs to the BLACK player
         if self.player == Player.BLACK:
-            square_in_front = Square.at(current_square.row - 1, current_square.col)
-            return [square_in_front]
+            # The square directly in front (one step down)
+            one_step = Square.at(current_square.row - 1, current_square.col)
+            moves.append(one_step)
+
+            # Check if the pawn is still on its starting row (row 6 for black)
+            if current_square.row == 6:
+                # The square two steps ahead
+                two_steps = Square.at(current_square.row - 2, current_square.col)
+                moves.append(two_steps)
+
+        # Step 4: If the pawn belongs to the WHITE player
         else:
-            square_in_front = Square.at(current_square.row + 1, current_square.col)
-            return [square_in_front]
+            # The square directly in front (one step up)
+            one_step = Square.at(current_square.row + 1, current_square.col)
+            moves.append(one_step)
+
+            # Check if the pawn is still on its starting row (row 1 for white)
+            if current_square.row == 1:
+                # The square two steps ahead
+                two_steps = Square.at(current_square.row + 2, current_square.col)
+                moves.append(two_steps)
+
+        # Step 5: Return the list of all possible moves
+        return moves
 
 
 class Knight(Piece):
